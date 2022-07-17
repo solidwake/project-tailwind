@@ -1,0 +1,14 @@
+{
+  "name": "project-tailwind",
+  "version": "1.0.0",
+  "description": "tailwind css reference",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Idris Westbrook",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}
