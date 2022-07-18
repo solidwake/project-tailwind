@@ -4,7 +4,7 @@
   "description": "tailwind css reference",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss -i source/style.css -o public/output.css -w"
   },
   "author": "Idris Westbrook",
   "license": "ISC",
