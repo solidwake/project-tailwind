@@ -601,6 +601,20 @@ a {
   }
 }
 
+.btn-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 100;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* Applies styles to grouped utility classes */
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -769,7 +783,15 @@ a {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.p-21:hover {
+  padding: 5.5rem;
+}
+
+/* Applies default and custom utility classes */
+
 /* @layer adds these styles to the specified directive */
+
+/* In Tailwind 3.0, all variants are enabled by default. @variants is deprecated */
 
 .btn {
   padding-top: 0.5rem;

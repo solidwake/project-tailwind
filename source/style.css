@@ -1,13 +1,26 @@
 /* TailwindCSS utility classes */
 @tailwind base; /* Applies preflight styles to html elements like body, a, h1, p, etc. */
-@tailwind components;
-@tailwind utilities;
+@tailwind components; /* Applies styles to grouped utility classes */
+@tailwind utilities; /* Applies default and custom utility classes */
 
 
 /* @layer adds these styles to the specified directive */
 @layer base {
     a {
         @apply text-red-700 underline;
+    }
+}
+
+@layer components {
+    .btn-blue {
+        @apply py-2 px-4 bg-blue-500 text-white font-thin
+    }
+}
+
+/* In Tailwind 3.0, all variants are enabled by default. @variants is deprecated */
+@layer utilities {
+    .p-21:hover {
+        padding: 5.5rem;
     }
 }
 
