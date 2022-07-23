@@ -1,6 +1,8 @@
 module.exports = {
+    mode: 'jit',
     content: [
-        './public/index.html'
+        './public/index.html',
+        './public/**/*.{html,js}'
     ],
     theme: {
         screens: {
@@ -10,4 +12,4 @@ module.exports = {
           xl: '1440px',
         }
     }
-} 
+}
