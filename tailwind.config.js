@@ -7,7 +7,7 @@ module.exports = {
         './public/**/*.{html,js}'
     ],
     plugins: [
-        plugin(function ({addUtilities, addVariant}) {
+        plugin(function ({addUtilities, addVariant, addComponents}) {
             const newUtilities = {
                 '.scale-1': {
                     transform: 'scale(1)'
@@ -18,6 +18,20 @@ module.exports = {
             }
             addUtilities(newUtilities)
             addVariant('hocus', ['&:hover', '&:focus'])
+            addComponents({
+                '.btn-six': {
+                    padding: '.5rem 1rem',
+                    borderRadius: '.25rem',
+                    fontWeight: '600'
+                },
+                '.btn-true': {
+                    backgroundColor: '#3490dc',
+                    color: '#fff',
+                    '&:hover': {
+                        backgroundColor: '#0096FF'
+                    }
+                }
+            })
         })
     ],
     theme: {

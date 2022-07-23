@@ -51,3 +51,7 @@
 .new-btn {
     @apply hover:scale-1 rotate-1;
 }
+
+.component {
+    @apply btn-six btn-true;
+}

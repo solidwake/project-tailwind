@@ -469,6 +469,18 @@ a {
     max-width: 1440px;
   }
 }
+.btn-six {
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  font-weight: 600;
+}
+.btn-true {
+  background-color: #3490dc;
+  color: #fff;
+}
+.btn-true:hover {
+  background-color: #0096FF;
+}
 .btn-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -502,6 +514,10 @@ a {
 .mx-\[75px\] {
   margin-left: 75px;
   margin-right: 75px;
+}
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 .mt-7 {
   margin-top: 1.75rem;
@@ -686,6 +702,18 @@ a {
 
 .new-btn:hover {
   transform: scale(1);
+}
+
+.component {
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  font-weight: 600;
+  background-color: #3490dc;
+  color: #fff;
+}
+
+.component:hover {
+  background-color: #0096FF;
 }
 
 .hover\:bg-green-400:hover {
