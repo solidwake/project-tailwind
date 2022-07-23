@@ -24,10 +24,26 @@
     }
 }
 
+/* Screen function - screen() */
+@media screen(lg) {
+    .rotate-0 {
+        transform: rotate(45deg);
+    }
+}
+
+/* Theme function - theme() */
+.content-area {
+    height: theme('height.60')
+}
+
 .btn {
     @apply py-2 px-4 font-semibold;
 }
 
 .btn-green {
     @apply rounded-lg shadow-md text-white bg-green-500 hover:bg-green-400;
+}
+
+.btn {
+    @apply p-1;
 }
