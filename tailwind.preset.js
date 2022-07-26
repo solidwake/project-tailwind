@@ -20,7 +20,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['Graphik', 'sans-serif'],
+        sans: ['monospace', 'sans-serif'],
       },
       extend: {
         flexGrow: {
