@@ -6,8 +6,11 @@ module.exports = {
         './public/index.html',
         './public/**/*.{html,js}'
     ],
+    presets: [
+        require('./tailwind.preset.js')
+    ],
     plugins: [
-        plugin(function ({addUtilities, addVariant, addComponents}) {
+        plugin(function ({addUtilities, addVariant, addComponents, addBase, theme}) {
             const newUtilities = {
                 '.scale-1': {
                     transform: 'scale(1)'
@@ -31,6 +34,11 @@ module.exports = {
                         backgroundColor: '#0096FF'
                     }
                 }
+            })
+            addBase({
+                'h1': {fontSize: theme('fontSize.xl')},
+                'h2': {fontSize: theme('fontSize.3xl')},
+                'h3': {fontSize: theme('fontSize.5xl')}
             })
         })
     ],

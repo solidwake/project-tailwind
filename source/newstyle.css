@@ -1,0 +1,8 @@
+.preset {
+    @apply font-sans;
+    @apply text-pink-dark;
+}
+
+a {
+    color: chartreuse;
+}

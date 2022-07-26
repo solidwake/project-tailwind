@@ -4,11 +4,11 @@
   "description": "tailwindcss sandbox",
   "main": "index.js",
   "scripts": {
-    "build": "postcss source/style.css -o public/output.css -w"
+    "build": "postcss source/newstyle.css -o public/output.css -w"
   },
   "author": "Idris Westbrook",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
     "postcss-cli": "^10.0.0",
